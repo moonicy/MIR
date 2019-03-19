@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: montserrat_ru; 
+    src: url(../font/Montserrat.ttf); 
+}
+
+main{
+    font-family: montserrat, montserrat_ru;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    background: #333;
+    display: flex;
+    padding: 10px 39px 5px;
+    height: 10vh;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover{
+    color: #009999;
+}
+.activ{
+    color: #009999;
+}
+
+aside {
+    position: relative;
+}
+
+section {
+    background: #ccc;
+    padding: 45px 47px 45px;
+    min-height: 80vh;
+}
+
+h1{
+    padding: 0 33px;
+    color: #009999;
+    font-size: 30px;
+}
+
+.flex{
+    display: flex;
+}
+.flex div{
+    padding: 33px;
+    font-size: 14px;
+}
+
+p{
+    padding: 0 0 40px 0;
+    line-height: 2;
+}
+
+
+/** slider **/
+.crsl-item {
+    background: #fff;
+    padding: 8px 0;
+}
+.crsl-item img{
+    width: 100%;
+}
+
+.previous{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    z-index: 1;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.next{
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    z-index: 1;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+/** end slider **/
+
+@media screen and (max-width: 680px){
+    aside img{
+        width: 100%;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    section {
+        padding: 30px 10px 30px;
+    }
+    /*Адаптация меню*/
+    nav {
+        flex-direction: column;
+    }
+    nav a{
+        display: none;
+    }
+    .activ{
+        display: block;
+    }
+    nav:hover a{
+        display: block;
+    }
+}
