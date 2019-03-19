@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Данный сайт был выполнен в рамках дисциплины Мировые информационные ресурсы.">
+	<meta name="author" content="Краснощёкова Людмила *_*">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+</head>
+<body>
+	<main>
+		<nav>
+			<a href="index.html" class="activ">ГЛАВНАЯ</a>
+			<a href="struct.html">СТРУКТУРА</a>
+			<a href="prospects.html">ПЕРСПЕКТИВЫ</a>
+			<a href="source.html">ИСТОЧНИКИ</a>
+			<a href="about.html">О РАЗРАБОТЧИКЕ</a>
+		</nav>
+		<aside>
+		    <div id="navbtns" class="clearfix">
+		        <a href="#" class="previous">prev</a>
+		        <a href="#" class="next">next</a>
+		    </div>
+		    
+		    <div class="crsl-items" data-navigation="navbtns">
+				<div class="crsl-wrap">
+					<div class="crsl-item">
+					    <img src="image/thumb01.jpg" alt="nyc subway">
+					</div><!-- post #1 -->
+					<div class="crsl-item">
+					    <img src="image/thumb02.jpg" alt="danny antonucci">
+					</div><!-- post #2 -->
+					<div class="crsl-item">
+					    <img src="image/thumb03.jpg" alt="watercolor paints">
+					</div><!-- post #3 -->
+					<div class="crsl-item">
+					    <img src="image/thumb04.jpg" alt="apple ipod classic photo">
+					</div><!-- post #4 -->
+					<div class="crsl-item">
+					    <img src="image/thumb05.jpg" alt="web design magazines">
+					</div><!-- post #5 -->
+				</div><!-- @end .crsl-wrap -->
+		    </div><!-- @end .crsl-items -->
+		</aside>
+		<section>
+			<center><h1>Облачные технологии: структура, перспективы развития.</h1></center>
+			<div class="flex">
+				<div>
+					<p>Облачные вычисления — модель обеспечения удобного сетевого доступа по требованию к некоторому общему фонду конфигурируемых вычислительных ресурсов (например, сетям передачи данных, серверам, устройствам хранения данных, приложениям и сервисам — как вместе, так и по отдельности), которые могут быть оперативно предоставлены и освобождены с минимальными эксплуатационными затратами или обращениями к провайдеру (c) Wikipedia</p>
+					<p>Понятие «облачные вычисления» означает, что хранение и обработка данных осуществляются не на стороне пользователя, а на стороне компании, предоставляющей соответствующие Интернет-сервисы.</p>
+				</div>
+			</div>
+		</section>
+		<nav>
+			<a href="index.html" class="activ">ГЛАВНАЯ</a>
+			<a href="struct.html">СТРУКТУРА</a>
+			<a href="prospects.html">ПЕРСПЕКТИВЫ</a>
+			<a href="source.html">ИСТОЧНИКИ</a>
+			<a href="about.html">О РАЗРАБОТЧИКЕ</a>
+		</nav>
+	</main>
+	<script type="text/javascript">
+		$(function(){
+		  $('.crsl-items').carousel({
+		    visible: 3,
+		    itemMinWidth: 180,
+		    itemEqualHeight: 370,
+		    itemMargin: 9,
+		  });
+		  
+		  $("a[href=#]").on('click', function(e) {
+		    e.preventDefault();
+		  });
+		});
+	</script>
+</body>
+</html>
