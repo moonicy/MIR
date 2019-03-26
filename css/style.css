@@ -40,7 +40,7 @@ aside {
 
 section {
     background: #ccc;
-    padding: 45px 47px 45px;
+    padding: 45px 47px 0px 47px;
     min-height: 80vh;
 }
 
@@ -54,13 +54,19 @@ h1{
     display: flex;
 }
 .flex div{
-    padding: 33px;
+    padding: 33px 33px 0px 33px;
     font-size: 14px;
 }
 
 p{
-    padding: 0 0 40px 0;
+    padding: 40px 0 0 0;
     line-height: 2;
+}
+
+.copyright{
+    bottom: 0;
+    padding-left: 33px;
+    font-size: 10px;
 }
 
 
